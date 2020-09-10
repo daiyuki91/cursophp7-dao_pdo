@@ -51,10 +51,18 @@ $aluno->insert();
 echo $aluno; //mostrar na tela
 */
 
+/*
 //Atualizando dados de um usuário
 $usuario = new Usuario();
 $usuario->loadById(16); //carregamos o usuario id=16
 $usuario->update("professor","prof123");
+echo $usuario;
+*/
+
+//Deletando um usuário
+$usuario = new Usuario();
+$usuario->loadById(16); //carregamos o usuario id=16
+$usuario->delete();
 echo $usuario;
 
 ?>
